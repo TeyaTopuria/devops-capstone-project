@@ -96,11 +96,7 @@ def test_get_account_not_found(self):
         resp = self.client.get(f"{BASE_URL}/0")
         self.assertEqual(resp.status_code, status.HTTP_404_NOT_FOUND)        
 
-#def test_error405(self):
-#        """It should not allow POST"""
-#        resp01 = self.client.post()
-#        self.assertEqual(resp01.status_code, status.HTTP_405_NOT_FOUND)
-        
+    
 ######################################################################
 # UPDATE AN EXISTING ACCOUNT
 ######################################################################
